@@ -1,0 +1,27 @@
+Pre-entrega 3 Martina Vitacca
+
+Proyecto Power to the Players.
+
+En esta entrega quise imitar una base de datos sobre algunos videojuegos de 6 categorías.
+
+Los modelos son:
+Adventure
+Puzzle
+Retro
+RPG Horror
+Stealth
+Survival
+Player
+
+La información que muestra de cada modelo es el Titulo, Desarrolladora, Plataformas y Modo de Juego (menos en la clase de RPG Horror que no requiere modo).
+
+En cada una de ellas se puede agregar un nuevo juego y buscar dentro de la base de datos los que ya están registrados.
+
+
+El modelo Player muestra Nombre, Apellido, Usuario y Email. También se puede agregar más jugadores ingresando los campos solicitados.
+
+
+A futuro me gustaría poder realizar un formulario para realizar un login, estuve mirando información para poder lograrlo pero para llegar bien a esta entrega, lo dejé comentado en el código (para no olvidarme!)
+
+
+

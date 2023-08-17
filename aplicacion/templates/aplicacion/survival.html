@@ -1,0 +1,39 @@
+{% extends "aplicacion/base.html" %} {% comment%} Hereda de la base.html {% endcomment %}
+{% load static %}
+
+
+{% block titulo %}
+
+<h1>Survival Games</h1>
+
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+    <form action="/found_survival_game" method="get">
+        {% csrf_token %}
+        <div class="input-group mb-3">
+            <input type="text" name="buscar" id="buscar" class="form-control" placeholder="Search">
+            <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </form>
+
+   
+    {% for juego in juegos %}
+
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h4 class="mb-1 text-primary">{{ juego.title }}</h4>
+                </div> 
+                <h6 class="mb-1">Developed by {{ juego.developer }}</h6>
+                <p class="mb-1"><span class="text-secondary"><b>Platforms: </b></span> {{ juego.platform }}</p>
+                <small class="text-muted">{{ juego.mode }}</small>
+            </a>
+        </div>     
+
+    {% endfor %}
+                    
+
+{% endblock contenido %}

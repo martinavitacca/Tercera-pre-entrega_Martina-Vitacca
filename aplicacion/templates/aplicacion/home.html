@@ -1,0 +1,120 @@
+{% extends "aplicacion/base.html" %} {% comment%} Hereda de la base.html {% endcomment %}
+{% load static %}
+
+{% block titulo %}
+
+<h1>POWER TO THE PLAYERS</h1>
+<span class="subheading">When 5 more minutes becomes 5 more hours.</span>
+
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    
+
+                   {% comment %} Categoría 1 {% endcomment %}
+                    <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Image-->
+                            <img class="card-img-top" src="{% static 'aplicacion/assets/img/adventure.jpg' %}">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Name-->
+                                    <h5 class="fw-bolder">Adventure</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="{% url 'adventure' %}">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% comment %} Categoría 2 {% endcomment %}
+                    <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Image-->
+                            <img class="card-img-top" src="{% static 'aplicacion/assets/img/puzzle.jpg' %}" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Name-->
+                                    <h5 class="fw-bolder">Puzzle</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="{% url 'puzzle' %}">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% comment %} Categoría 3 {% endcomment %}
+                      <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Image-->
+                            <img class="card-img-top" src="{% static 'aplicacion/assets/img/stealth.jpg' %}" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Name-->
+                                    <h5 class="fw-bolder">Stealth</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="{% url 'stealth' %}">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% comment %} Categoría 4 {% endcomment %}
+                    <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Image-->
+                            <img class="card-img-top" src="{% static 'aplicacion/assets/img/survival.jpg' %}" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Name-->
+                                    <h5 class="fw-bolder">Survival</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="{% url 'survival' %}">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% comment %} Categoría 5 {% endcomment %}
+                    <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Image-->
+                            <img class="card-img-top" src="{% static 'aplicacion/assets/img/retro.jpg' %}">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Name-->
+                                    <h5 class="fw-bolder">Retro</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="{% url 'retro' %}">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {% comment %} Categoría 6 {% endcomment %}
+                    <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Image-->
+                            <img class="card-img-top" src="{% static 'aplicacion/assets/img/rpg_horror.png' %}">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Name-->
+                                    <h5 class="fw-bolder">RPG Horror</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="{% url 'rpg_horror' %}">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+{% endblock contenido %}

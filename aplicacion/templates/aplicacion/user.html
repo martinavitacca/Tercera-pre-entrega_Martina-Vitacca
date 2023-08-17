@@ -1,0 +1,30 @@
+{% extends "aplicacion/base.html" %} {% comment%} Hereda de la base.html {% endcomment %}
+{% load static %}
+
+
+{% block titulo %}
+
+<h1>PLAYER</h1>
+<span class="subheading">True gamers will never die.</span>
+
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+  {% for player in players %}
+
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content">
+                    <h4 class="mb-1 text-primary">{{ player.name }} </h4>
+                    <h4 class=" mb-1 ms-2 text-primary">{{ player.surname }}</h4>
+                </div> 
+                <h6 class="mb-1"><span class="text-secondary"><b>Username: </b></span>{{ player.user_name }} </h6>
+                <h6 class="mb-1"><span class="text-secondary"><b>Email: </b></span>{{ player.email }} </h6>
+            </a>
+        </div>     
+
+    {% endfor %}
+
+{% endblock contenido %}
